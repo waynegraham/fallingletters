@@ -2,9 +2,9 @@ var fontsReady = false;
 var starting = false;
 
 var WebFontConfig = {
-  google: { families: [ 'Kite+One::latin', "Londrina+Solid",  "Lily+Script+One", "Fascinate+Inline", "Monsieur+La+Doulaise", "Life+Savers" ] },
+  google: { families: [ 'Kite+One::latin', "Londrina+Solid",  "Lily+Script+One", "Fascinate+Inline", "Monsieur+La+Doulaise", "Life+Savers", "Great+Vibes" ] },
   active: function() {
-    console.log("All fonts are loaded");
+    //console.log("All fonts are loaded");
     fontsReady = true;
   }
 };
