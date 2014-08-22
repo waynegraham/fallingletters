@@ -1,0 +1,27 @@
+{
+  "name": "fallingletters",
+  "title": "Falling Letters",
+  "description": "jQuery plugin for adding falling letters effect.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/waynegraham/fallingletters",
+  "author": {
+    "name": "Wayne Graham",
+    "email": "wayne.graham@virginia.edu",
+    "url": "http://waynegraham.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waynegraham/fallingletters.git"
+  },
+  "bugs": "https://github.com/waynegraham/fallingletters/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/waynegraham/fallingletters/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
