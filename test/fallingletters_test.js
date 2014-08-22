@@ -40,11 +40,11 @@
 
   module('jQuery.fallingletters');
 
-  test('is awesome', function() {
-    expect(2);
-    strictEqual($.fallingletters(), 'awesome.', 'should be awesome');
-    strictEqual($.fallingletters({punctuation: '!'}), 'awesome!', 'should be thoroughly awesome');
-  });
+  //test('is awesome', function() {
+    //expect(2);
+    //strictEqual($.fallingletters(), 'awesome.', 'should be awesome');
+    //strictEqual($.fallingletters({punctuation: '!'}), 'awesome!', 'should be thoroughly awesome');
+  //});
 
   module(':fallingletters selector', {
     // This will run before each test in this module.

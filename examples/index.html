@@ -17,13 +17,37 @@
   left:0px;
   z-index:10;
   position:block;
+  -webkit-animation: spin 4s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  0% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}
 }
 </style>
 </head>
 <body>
 <div id="letters"></div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script src="fonts.js"></script>
-<script src="letters.js"></script>
+<script src="../lib/stats.min.js"></script>
+
+<script>
+var stats = new Stats();
+stats.setMode(0); // 0: fps, 1: ms
+
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.left = '0px';
+stats.domElement.style.top = '0px';
+
+document.body.appendChild( stats.domElement );
+
+setInterval( function () {
+    stats.begin();
+    stats.end();
+}, 1000 / 60 );
+</script>
+
+<script src="../lib/fonts.js"></script>
+<script src="../lib/falling-letters.js"></script>
 </body>
 </html>
