@@ -14,17 +14,34 @@ In your web page:
 <script src="jquery.js"></script>
 <script src="dist/fallingletters.min.js"></script>
 <script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
-});
+$(document).ready(function(){
+  $('letters').fallingletters();
+)}:
 </script>
 ```
 
 ## Documentation
-_(Coming soon)_
+
+### Installation
+
+
+
+You can call the fallingletters effect with an id `letters` with a
+single line of JavaScript.
+
+```javascript
+$('#letters').fallingletters(options);
+```
+
+### Options
+
+Name | type | default | description
+---- | ---- | ------- | -----------
+fonts| string |'Kite+One::latin', "Londrina+Solid",  "Lily+Script+One" | List of fonts (from Google Fonts directory) to use for the falling letters
+letters | string | ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz | Characters to use for falling letters
 
 ## Examples
-_(Coming soon)_
+
 
 ## Release History
 _(Nothing yet)_
