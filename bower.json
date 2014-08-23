@@ -1,0 +1,20 @@
+{
+  "name": "fallingletters",
+  "version": "0.1.0",
+  "homepage": "https://github.com/waynegraham/fallingletters",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "prefixfree": "latest",
+    "jQueryKeyframes": "latest"
+  },
+  "devDependencies": {
+    "stats.js": "*"
+  }
+}

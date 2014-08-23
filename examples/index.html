@@ -9,28 +9,38 @@
 <title>Falling Letters</title>
 <meta name="description" content="Falling letters example with Google Fonts">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-.fontFlake{
-  position:absolute;
-  top:-50px;
-  left:0px;
-  z-index:10;
-  position:block;
-  -webkit-animation: spin 4s infinite linear;
-}
-
-@-webkit-keyframes spin {
-  0% {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(360deg);}
-}
-</style>
 </head>
 <body>
 <div id="letters"></div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script src="../lib/stats.min.js"></script>
+<script src="../bower_components/stats.js/build/stats.min.js"></script>
 
+<script src="../lib/fonts.js"></script>
+<script src="../bower_components/prefixfree/prefixfree.min.js"></script>
+<script src="../bower_components/jQueryKeyframes/jquery.keyframes.js"></script>
+<script src="../lib/falling-letters.js"></script>
+
+<script>
+
+var supportedFlag = $.keyframe.isSupported();
+
+$.keyframe.define(
+  [
+    {
+      name: 'clockwise',
+      from: { 'transform': 'rotate(0deg)' },
+      to:   { 'transform': 'rotate(360deg)' },
+    },
+    {
+      name: 'counter',
+      from: { 'transform': 'rotate(360deg)' },
+      to:   { 'transform': 'rotate(0deg)' }
+    }
+  ]
+);
+
+
+</script>
 <script>
 var stats = new Stats();
 stats.setMode(0); // 0: fps, 1: ms
@@ -44,10 +54,7 @@ document.body.appendChild( stats.domElement );
 setInterval( function () {
     stats.begin();
     stats.end();
-}, 1000 / 60 );
+    }, 1000 / 60 );
 </script>
-
-<script src="../lib/fonts.js"></script>
-<script src="../lib/falling-letters.js"></script>
 </body>
 </html>
