@@ -1,4 +1,4 @@
-/*! Falling Letters - v0.1.0 - 2014-08-22
+/*! Falling Letters - v0.1.0 - 2014-08-25
 * https://github.com/waynegraham/fallingletters
 * Copyright (c) 2014 Wayne Graham; Licensed MIT */
 (function($) {

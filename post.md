@@ -377,7 +377,17 @@ components, concatenating bower components, "uglifying" the code base
 file is updated. To get a list of all the tasks you can run
 individually, run the `grunt --help` command.
 
-## Second Pass
-- jquery plugin
+```shell
+...
+Available tasks
+         clean  Clean files and folders. *
+        concat  Concatenate files. *
+        uglify  Minify files with UglifyJS. *
+         qunit  Run QUnit unit tests in a headless PhantomJS instance. *
+        jshint  Validate files with JSHint. *
+         watch  Run predefined tasks whenever watched files change.
+       default  Alias for "jshint", "qunit", "clean", "concat", "uglify" tasks.
+...
+```
 
 
