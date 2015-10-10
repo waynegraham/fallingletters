@@ -1,0 +1,14 @@
+{
+  "name": "falling-letters",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3",
+    "jQueryKeyframes": "~0.0.9"
+  },
+  "devDependencies": {
+    "chai": "~3.3.0",
+    "mocha": "~2.3.3",
+    "stats.js": "*"
+  }
+}
